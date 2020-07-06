@@ -6,7 +6,8 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(features = {
-        "src/test/resources/features/register.feature"
+        "src/test/resources/features/addFirstProductToCart.feature",
+        //"src/test/resources/features/removeProductsInCart.feature"
 },
         strict = false, plugin = {"pretty",
         "json:target/cucumber_json_reports/WishFinalProject.json",
