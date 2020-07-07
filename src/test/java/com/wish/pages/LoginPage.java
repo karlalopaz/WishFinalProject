@@ -38,11 +38,16 @@ public class LoginPage extends BasePage {
     public void validateLoginPage() {
         wait.until(ExpectedConditions.visibilityOf(logoWish));
         assertTrue(logoWish.isDisplayed());
+
     }
 
-    public void loginWithValidCredentials() {
+    public void loginWithValidCredentials()
+    {
+        assertTrue(loginEmail.isDisplayed());
+        assertTrue(loginPassword.isDisplayed());
         loginEmail.sendKeys(Passwords.EMAIL);
         loginPassword.sendKeys(Passwords.PASSWORD);
+        wait.until(ExpectedConditions.elementToBeClickable(loginButton));
         loginButton.click();
         System.out.println("Login successful");
     }

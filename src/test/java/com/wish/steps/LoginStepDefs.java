@@ -18,6 +18,7 @@ public class LoginStepDefs {
         wishSite.getLogin().navigate();
         wishSite.getLogin().validateLoginPage();
         wishSite.getLogin().loginWithValidCredentials();
-        Thread.sleep(60000);
+        //Thread.sleep(120000);
+
     }
 }

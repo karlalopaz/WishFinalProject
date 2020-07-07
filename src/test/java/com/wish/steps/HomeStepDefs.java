@@ -24,6 +24,6 @@ public class HomeStepDefs
     @And("I have products added in the cart")
     public void iHaveProductsAddedInTheCart() {
         //solo se puede usar la función de abajo si nuestra decisión fue solo validar que el número de items en el carrito aumentara al agregar
-        wishSite.getSearchProduct().validateProductAddedToCart();
+        wishSite.getProduct().validateProductAddedToCart();
     }
 }

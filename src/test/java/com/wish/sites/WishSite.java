@@ -1,9 +1,6 @@
 package com.wish.sites;
 
-import com.wish.pages.CartPage;
-import com.wish.pages.HomePage;
-import com.wish.pages.SearchProductPage;
-import com.wish.pages.LoginPage;
+import com.wish.pages.*;
 import org.openqa.selenium.WebDriver;
 
 
@@ -30,10 +27,16 @@ public class WishSite {
         return new CartPage(driver);
     }
 
+    public ProductPage getProduct()
+    {
+        return new ProductPage(driver);
+    }
+
     private SearchProductPage searchProduct;
     private HomePage home;
     private LoginPage login;
     private CartPage cart;
+    private ProductPage product;
 
     public WishSite(WebDriver driver)
     {
