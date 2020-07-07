@@ -41,11 +41,8 @@ public class SearchProductPage extends BasePage{
         }
     }
 
-    public void capturarDatosProducto(int i)
+    public Producto capturarDatosProducto(int i)
     {
-        String prodName = nombreProducto.getText();
-        prodName = prodName.replace(",","");
-
         String prodPrice = precioProducto.getText();
         prodPrice = prodPrice.replace("$", "");
         double price = Double.parseDouble(prodPrice);
@@ -54,7 +51,7 @@ public class SearchProductPage extends BasePage{
         prodOld = prodOld.replace("$", "");
         double oldPrice = Double.parseDouble(prodOld);
 
-        return new Producto(prodName, price, oldPrice);
+        return new Producto(price, oldPrice);
 
     }
 

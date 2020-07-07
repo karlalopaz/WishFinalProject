@@ -2,6 +2,7 @@ package com.wish.steps;
 
 import com.wish.hooks.Hooks;
 import com.wish.sites.WishSite;
+import com.wish.utils.Producto;
 import cucumber.api.java.en.Then;
 
 public class ProductStepDefs {
